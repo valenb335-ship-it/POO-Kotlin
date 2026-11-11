@@ -16,7 +16,9 @@ suspend fun obtenerPublicaciones(): List<Publicacion>{
     delay(3.seconds)
     return listOf(Publicacion("Publicacion : 1"), Publicacion("Publicacion : Aprendiendo Kotlin"))
 }
-/*
+
+// Con concurrencia
+
 suspend fun main() = coroutineScope {
     val tiempo = measureTime{
 
@@ -29,8 +31,9 @@ suspend fun main() = coroutineScope {
 
     println("Pantalla cargada en $tiempo")
 }
- */
 
+//Sin Concurrencia
+/*
 suspend fun main() = coroutineScope {
     val tiempo = measureTime{
 
@@ -43,3 +46,5 @@ suspend fun main() = coroutineScope {
 
     println("Pantalla cargada en $tiempo")
 }
+
+ */
