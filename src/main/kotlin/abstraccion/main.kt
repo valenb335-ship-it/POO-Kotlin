@@ -1,6 +1,5 @@
 package org.example.abstraccion
 
-/*
 fun main(){
 val notificaciones: List<Notificacion> = listOf(
     NotificacionEmail("ana@mail.com", "Tu pedido fue enviado", "Pedido #1234"),
@@ -11,12 +10,13 @@ val notificaciones: List<Notificacion> = listOf(
     notificaciones.forEach { it.enviar() }
 }
 
- */
 
 
+/*
 fun main(){
  val turno = Turno("Turno con el dentista", "REC-001")
     turno.programar("10:30")
     turno.registrar()
     println(turno.descripcion())
 }
+ */

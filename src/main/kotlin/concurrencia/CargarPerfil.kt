@@ -18,6 +18,8 @@ suspend fun obtenerPublicaciones(): List<Publicacion>{
 }
 
 // Con concurrencia
+/*
+
 
 suspend fun main() = coroutineScope {
     val tiempo = measureTime{
@@ -31,10 +33,10 @@ suspend fun main() = coroutineScope {
 
     println("Pantalla cargada en $tiempo")
 }
-
+*/
 //Sin Concurrencia
-/*
-suspend fun main() = coroutineScope {
+
+suspend fun main() {
     val tiempo = measureTime{
 
         val usuario = obtenerUsuario()
@@ -47,4 +49,3 @@ suspend fun main() = coroutineScope {
     println("Pantalla cargada en $tiempo")
 }
 
- */

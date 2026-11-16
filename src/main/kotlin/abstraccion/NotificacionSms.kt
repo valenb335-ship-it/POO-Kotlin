@@ -6,7 +6,6 @@ class NotificacionSms(destinatario: String, mensaje: String): Notificacion(desti
 
     override fun esValido() = destinatario.length >= 10  && mensaje.length <= 160
 
-    override fun entregar(contenido: String) = println("[$canal] enviar a $destinatario --> $mensaje")
-
+    override fun entregar(contenido: String) = println("[$canal] enviar a $destinatario --> $contenido")
 
 }

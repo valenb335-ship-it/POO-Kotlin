@@ -1,8 +1,6 @@
 package org.example.polimorfismo
 
 fun main(){
-
-    
     val album = listOf(
         Musica("cancion1", 4, "alta"),
         Musica("cancion2", 3, "alta"),
@@ -11,24 +9,16 @@ fun main(){
 
     val podcast = Podcast("Historias de la ciencia", 60)
 
-
     val gestor = GestorDescargas()
     gestor.descargar(album)
     gestor.descargar(podcast)
     println("Descargas: ${gestor.cantidad}")
 
 
-
-/*
     val libro = AudioLibro("El viaje", 300, 3)
-    val podcast = Podcast("Historias de la Informatica", 60)
+    val podcast2 = Podcast("Historias de la Informatica", 60)
     podcast.guardarProgreso(35)
     libro.guardarProgreso(150)
-    val continuar: List<Retomable> = listOf(podcast, libro)
+    val continuar: List<Retomable> = listOf(podcast2, libro)
     continuar.forEach { println(it.retomar()) }
-
-
- */
-
-
 }

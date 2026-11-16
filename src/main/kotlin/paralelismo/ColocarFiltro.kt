@@ -13,7 +13,7 @@ fun aplicarFiltro(foto: String): String{
 }
 
 //Paralelo
-
+/*
 suspend fun main() {
     val fotos = listOf("foto1.jpg", "foto2.jpg", "foto3.jpg", "foto4.jpg")
 
@@ -27,9 +27,11 @@ suspend fun main() {
 }
 
 
+ */
+
 
 //Secuencial
-/*
+
 suspend fun main() {
     val fotos = listOf("foto1.jpg", "foto2.jpg", "foto3.jpg", "foto4.jpg")
 
@@ -41,6 +43,6 @@ suspend fun main() {
 }
 
 
- */
+
 
 

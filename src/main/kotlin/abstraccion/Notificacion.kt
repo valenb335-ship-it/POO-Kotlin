@@ -17,3 +17,4 @@ abstract class Notificacion(val destinatario: String, val mensaje: String) {
 
     protected open fun formatear(): String = mensaje
 }
+
